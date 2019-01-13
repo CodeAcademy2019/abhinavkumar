@@ -1,0 +1,1 @@
+module.exports = (word,times = word.length) => word+'!'.repeat(times);
