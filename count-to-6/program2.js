@@ -6,8 +6,11 @@ console.log(`Hello, ${name}!\nYour name lowercased is "${lowerName}".`)
 */
 
 function prg2(){
-    var name = 'FAIL';
-    return name;
+    var name = process.argv[2];
+    var lowerName = name.toLowerCase();
+    var sol = `Hello, ${name}!\nYour name lowercased is "${lowerName}".`
+    console.log(sol)
+    return sol;
 }
 
 prg2();
