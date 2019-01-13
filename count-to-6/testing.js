@@ -1,2 +1,3 @@
-const prg2 = require('./program2');
-console.log(prg2());
+let numbers = [1,2,3,4,5,6];
+let kk = numbers;
+console.log(...kk);
