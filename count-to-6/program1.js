@@ -1,4 +1,4 @@
 function prg1(){
-    return '';
+    return 'HELLO ES6';
 }
 module.exports = prg1;
