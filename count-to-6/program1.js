@@ -1,7 +1,7 @@
-function prg1(){
+function program1(){
     let sol =  'HELLO ES6';
     console.log(sol);
     return sol;
 }
-prg1();
-module.exports = prg1;
+program1();
+module.exports = program1;
