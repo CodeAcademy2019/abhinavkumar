@@ -4,7 +4,7 @@ function prg4(){
         kick: function () {
             this.yelp = 'Ouch!';
             setImmediate(() => {
-               return (this.yelp);
+               console.log (this.yelp);
             });
         }
     };
