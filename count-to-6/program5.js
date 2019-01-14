@@ -1,6 +1,16 @@
-let userArray = process.argv.slice(2);
-let data = {};
+// let userArray = process.argv.slice(2);
+// let data = {};
 
-[,data.username, data.email] = userArray;
+// [,data.username, data.email] = userArray;
 
-console.log(data);
+// console.log(data);
+
+function prg5(userArray){
+    let data = {};
+    [,data.username, data.email] = userArray;
+    return data;
+}
+
+//console.log(prg5(process.argv.slice(2)));
+
+module.exports = prg5;

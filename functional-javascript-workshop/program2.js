@@ -1,12 +1,9 @@
-function func1(){
-    console.log('hello-world');
-}
+function repeat(operation, num) {
+    // SOLUTION GOES HERE
+    if(num <=0 ) return;
+    operation();
+    return repeat(operation,num-1)
+  }
 
-function func2(func1,num){
-    if(num==0){
-        return;
-    }
-        func2(func1,num-1);
-}
-
-module.exports = func2;
+  // Do not remove the line below
+  module.exports = repeat
