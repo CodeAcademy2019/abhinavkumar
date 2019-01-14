@@ -1,16 +1,26 @@
 const prg2 = require('./program2');
 
-test('test1 program 2',() => {
+test('Test should print lower cased name',() => {
     let name = 'BRUCE';
-    expect(prg2(name)).toBe(`Hello, ${name}!\nYour name lowercased is "bruce".`)
+    expect(prg2(name)).toEqual(`Hello, ${name}!\nYour name lowercased is "bruce".`)
 });
 
-test('test2 program 2',() => {
+test('Test should print lower cased name',() => {
     let name = 'ABHINAV';
-    expect(prg2(name)).toBe(`Hello, ${name}!\nYour name lowercased is "abhinav".`)
+    expect(prg2(name)).toEqual(`Hello, ${name}!\nYour name lowercased is "abhinav".`)
 });
 
-test('test3 program 2',() => {
-    let name = 'MESSI';
-    expect(prg2(name)).toBe(`Hello, ${name}!\nYour name lowercased is "messi".`)
+test('Should not change already lower case!',() => {
+    let name = 'messi';
+    expect(prg2(name)).toEqual(`Hello, ${name}!\nYour name lowercased is "messi".`)
+});
+
+test('Combination of lower and upper case to Lower case',() => {
+    let name = 'rOnAlDo';
+    expect(prg2(name)).toEqual(`Hello, ${name}!\nYour name lowercased is "ronaldo".`)
+});
+
+test('test for checking lower case staying lower case after function',() => {
+    let name = 'messi';
+    expect(prg2(name)).not.toEqual(`Hello, ${name}!\nYour name lowercased is "MESSI".`)
 });

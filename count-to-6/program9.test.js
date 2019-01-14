@@ -1,13 +1,9 @@
 const prg9 = require('./program9');
 
-test ('test1 for program 9', () => {
+test ('test for Hi should print Hi!! (DEFAULT)', () => {
     expect(prg9('Hi')).toBe('Hi!!')
 });
 
-test ('test2 for program 9', () => {
+test ('test for (hi,5) should print hi!!!!!', () => {
     expect(prg9('hi',5)).toBe('hi!!!!!');
-});
-
-test ('test3 for program 9', () => {
-    expect(prg9('HELLO')).toBe('HELLO!!!!!')
 });
