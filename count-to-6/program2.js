@@ -5,7 +5,7 @@ console.log(`Hello, ${name}!\nYour name lowercased is "${lowerName}".`)
 
 */
 
-function prg2(name){
+var prg2 = (name) => {
     var lowerName = name.toLowerCase();
     var sol = `Hello, ${name}!\nYour name lowercased is "${lowerName}".`
     console.log(sol);

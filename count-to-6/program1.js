@@ -1,4 +1,4 @@
-function program1(){
+var program1 = () => {
     let sol =  'HELLO ES6';
     console.log(sol);
     return sol;

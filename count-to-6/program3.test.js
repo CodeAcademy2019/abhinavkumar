@@ -1,11 +1,11 @@
 const prg3 = require('./program3');
 
-test('Test to check first characters and recorded of an array of strings',() => {
+test('Test to check first characters  of an array of strings are recorded',() => {
     inputs = ['Hello','arrow','functions'];
     expect(prg3(inputs)).toEqual(`${inputs} becomes "Haf"`);
 });
 
-test('test to check if Case is maintained',() => {
+test('test to check if Case is maintained while recording first characters from array',() => {
     inputs = ['Hello','arrow','functions'];
     expect(prg3(inputs)).not.toEqual(`${inputs} becomes "haf"`);
 });

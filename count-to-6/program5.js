@@ -5,7 +5,7 @@
 
 // console.log(data);
 
-function prg5(userArray){
+var prg5 = (userArray) => {
     let data = {};
     [,data.username, data.email] = userArray;
     return data;

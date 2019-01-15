@@ -1,4 +1,4 @@
-function prg3(inputs){
+var  prg3 = (inputs) => {
 
 var result = inputs.map(input=>input[0]).reduce((firstCharacters,firstCharacter)=>firstCharacters+firstCharacter);
 
