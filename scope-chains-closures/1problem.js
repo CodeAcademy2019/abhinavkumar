@@ -1,3 +1,3 @@
-var foo = foo() => {
-    var bar; 
+function foo(){
+    var bar;
 }
