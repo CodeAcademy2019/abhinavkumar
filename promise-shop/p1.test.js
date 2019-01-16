@@ -14,3 +14,10 @@ test ('Testing if function prints after 300ms and setTimeout is called only once
     expect(setTimeout).toHaveBeenCalledTimes(1); 
 });
 
+test ('Testing if callback function called only after 300ms', () => {
+    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function),300);
+});
+
+// test ('Testing if function prints TIMED OUT!', ()=>{
+//     expect(msg).toEqual('TIMED OUT!');
+// });
