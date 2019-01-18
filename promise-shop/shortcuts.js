@@ -5,4 +5,6 @@ promise.catch( function (err){
     console.log(err.message);
 });
 
-module.exports = promise;
+promise1.then(console.log);
+
+module.exports = {promise,promise1};
