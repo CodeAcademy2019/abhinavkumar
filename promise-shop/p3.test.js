@@ -1,17 +1,23 @@
 const rejectPromise = require('./rejectPromise');
 
-const prm = rejectPromise();
+//const prm = rejectPromise();
 
 test('Testing if promise rejected with error', () => {
-    expect.assertions(1);
+    //expect.assertions(1);
     
-    return expect(prm).rejects.toEqual(new Error('REJECTED!'));
+    return expect(rejectPromise).rejects.toEqual(new Error('REJECTED!'));
 });
 
-jest.useFakeTimers();
-
-rejectPromise();
-
-test ('Testing if callback function called only after 300ms', () => {
-    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function),300);
+test('Testing if promise not rejected with wrong message', () => {
+    
+    return expect(rejectPromise).rejects.not.toEqual(new Error('reject!'));
 });
+
+
+// jest.useFakeTimers();
+
+// rejectPromise();
+
+// test ('Testing if callback function called only after 300ms', () => {
+//     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function),300);
+// });

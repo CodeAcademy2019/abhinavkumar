@@ -1,14 +1,14 @@
-'use strict';
-
  function Reject(){   
 
-    let promise = new Promise(function (fulfill, reject) {
+    let constructPromise =  (fulfill, reject)  => {
         setTimeout( () => reject (new Error('REJECTED!')) ,300);
-    });
+    };
 
     function onReject (error) {
     console.log(error.message);
     }
+
+    let promise = new Promise(constructPromise);
 
     promise.then(
         null,
@@ -18,6 +18,5 @@
     return promise;
 }
 
-Reject();
 
-module.exports = Reject;
+module.exports = Reject();
