@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int workyards;
-    
+    int MAXPROFIT = 0;
     //inputting number of workyards
     cin>>workyards;
     if(workyards == 0) return 0;
@@ -43,8 +43,9 @@ int main() {
         
         int *it ;
         it = max_element(cumulativeProfit, cumulativeProfit + numberOfBoxes);
-        cout<<"MAX PROFIT IS "<<*it;
-        
+        //cout<<"MAX PROFIT IS "<<*it;
+        MAXPROFIT+=*it;
         
     }
+    cout<<"MAX PROFIT IS "<<MAXPROFIT;
 }

@@ -1,4 +1,3 @@
-
 let timeOut = () => {
   setTimeout(() => {
     let msg = 'TIMED OUT!'
