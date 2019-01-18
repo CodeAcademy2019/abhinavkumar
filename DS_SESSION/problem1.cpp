@@ -43,7 +43,7 @@ int main() {
         
         int *it ;
         it = max_element(cumulativeProfit, cumulativeProfit + numberOfBoxes);
-        cout<<"MAX IS "<<*it;
+        cout<<"MAX PROFIT IS "<<*it;
         
         
     }
