@@ -1,12 +1,12 @@
 function reduce(arr, fn, initial) {
-    // SOLUTION GOES HERE
-    if(!arr.length){return initial;}
-
-    initial = fn(initial,arr[0],0,arr);
-
-    return reduce(arr.slice(1),fn,initial);
-
-
+  // SOLUTION GOES HERE
+  if (!arr.length) {
+    return initial;
   }
 
-  module.exports = reduce;
+  initial = fn(initial,arr[0],0,arr);
+
+  return reduce(arr.slice(1),fn,initial);
+}
+
+module.exports = reduce;
