@@ -57,27 +57,17 @@ function gameStart(totalRolls){
 
   let frames = [frame1,frame2,frame3,frame4,frame5,frame6,frame7,frame8,frame9.frame10];
 
-  // totalRolls.forEach((roll => {
-  //   console.log('Roll is',roll);
+  totalRolls.forEach((roll => {
+    console.log('Roll is',roll);
 
-  //   frameState.call(frame,roll);
+    frameState.call(frame,roll);
 
-  //   if((frame.states.strike === true)){
+    if((frame.states.strike === true)){
       
-  //     frame = new Frame();
-  //   }
-
-  // }));
-  let i=0;
-  frames.forEach((frame) => {
-    let frameScore = 0;
-    for(i;i<totalRolls.length;){
-      if(totalRolls[i] === 10){
-        frameScore = 10 + totalRolls[i+1] + totalRolls[i+2];
-        i++;
-      }
+      frame = new Frame();
     }
-  });
+
+  }));
 
 
 }
