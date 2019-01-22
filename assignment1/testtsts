@@ -1,0 +1,16 @@
+  // let freshFrame = () => {
+
+  //   frame = new Frame(); //new frame created
+  //   console.log('FRESH FRAME CREATED!');
+  //   while((frame.pinsLeft>0) || (frame.triesLeft>0)) {
+  //     totalRolls.forEach((roll) => {
+
+  //       // Update the frame with the roll
+  //       frameState.call(frame,roll);
+  //       if(frame.state.strike === true){
+  //         frame = new Frame(); 
+  //       }
+  //     });
+  //   }
+    
+  // }
