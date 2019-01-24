@@ -1,9 +1,9 @@
-const filePath = process.argv[2];
+// const filePath = process.argv[2];
 const fs = require('fs');
 
-function callback(length) {
-  console.log(length);
-}
+// function callback(length) {
+//   console.log(length);
+// }
 
 
 function countNumberOfLines(str) {
@@ -21,6 +21,6 @@ function findNumberOfNewLines(path, callbackFunction) {
   });
 }
 
-//findNumberOfNewLines(filePath, callback);
+// findNumberOfNewLines(filePath, callback);
 
-module.exports = findNumberOfNewLines;
+module.exports = { findNumberOfNewLines, countNumberOfLines };
