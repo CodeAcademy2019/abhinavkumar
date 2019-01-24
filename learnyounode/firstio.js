@@ -1,20 +1,17 @@
- const filePath = process.argv[2];
+const filePath = process.argv[2];
+const fs = require('fs');
 
-function countNewLines(filePath) {
-
-  var fs = require('fs');
-
+function countNewLines(path) {
   // console.log(filePath);
+  const buf = fs.readFileSync(path);
 
-  let buf = fs.readFileSync(filePath);
+  const str = buf.toString();
 
-  let str = buf.toString();
-
-  let numOfLines = str.split('\n');
+  const numOfLines = str.split('\n');
   console.log(numOfLines.length - 1);
   return numOfLines.length - 1;
-} 
+}
 
- countNewLines(filePath)
+countNewLines(filePath);
 
 module.exports = countNewLines;
